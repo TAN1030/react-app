@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(6px + 2vmin);
 }
 .body-link {
   color: #f74232;
