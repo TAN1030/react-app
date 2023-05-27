@@ -12,7 +12,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Main />}></Route>
-          <Route path="/product/*" elemnet={<Product />}></Route>
+          <Route path="/product/*" element={<Product />}></Route>
           { /* 상단에 위치하는 Route 들을 확인하고 일치하는 Route 가 없다면, 아래와같이 처리 */}
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
