@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="Center"> 
+      <p>
+        🌼React 테스트🌼<br/>
+        1. 한글 / CSS 적용테스트<br/>
+        2. herf 테스트 <br/>
+        3. 배포테스트<br/>
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="Center-link"
+          href="https://github.com/TAN1030"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          My github
         </a>
-      </header>
+
     </div>
   );
 }
