@@ -7,6 +7,8 @@ import Product from './views/Product';
 import Detail from './views/Detail';
 import NotFound from './views/NotFound';
 import List from './views/List';
+import SelectBoxTest from './views/SelectBoxTest';
+
 //import JsonReadWrite from './views/JsonReadWrite';
 
 
@@ -19,7 +21,8 @@ const App = () => {
         <Route path="/" element={<Main />}></Route>
           <Route path="/product/:productId" element={<Product />}></Route> 
           <Route path="/list" element={<List />}></Route>  
-           <Route path="/detail" element={<Detail />}></Route>  
+          <Route path="/selectBoxTest" element={<SelectBoxTest />}></Route>  
+          <Route path="/detail" element={<Detail />}></Route>  
 
           { /* 상단에 위치하는 Route 들을 확인하고 일치하는 Route 가 없다면, 아래와같이 처리 */}
           <Route path="*" element={<NotFound />}></Route>
