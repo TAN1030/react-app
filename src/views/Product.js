@@ -1,6 +1,5 @@
 import React from 'react';
-import { useParams, useLocation } from 'react-router-dom'; /* 커스텀 Hooks */
-
+import { useParams, useLocation } from 'react-router-dom';  
 
 const Product = () => {
    

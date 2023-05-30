@@ -6,6 +6,7 @@ import Footer from './views/Footer';
 import Product from './views/Product';
 import Detail from './views/Detail';
 import NotFound from './views/NotFound';
+import List from './views/List';
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
         <Route path="/" element={<Main />}></Route>
           <Route path="/product/:productId" element={<Product />}></Route> 
+          <Route path="/list" element={<List />}></Route>  
           <Route path="/detail" element={<Detail />}></Route>  
 
           { /* 상단에 위치하는 Route 들을 확인하고 일치하는 Route 가 없다면, 아래와같이 처리 */}

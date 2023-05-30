@@ -12,10 +12,11 @@ const Main = () => {
 				<Link to="/product/3?search=productName(3번item)&q=demo#test"><li>3번 상품</li></Link>        
             </ul>
 
-			<h4>2. searchParams TEST</h4>
-			<ul>
- 				<Link to="/detail?id=10&mode=U"><li>searchParams TEST</li></Link>         
-            </ul>
+			<h4><Link to="/detail?id=10&mode=U&sort=DESC">2. searchParams TEST</Link></h4>
+			
+			<h4><Link to="/list">3. List TEST</Link></h4>
+
+
 
 		</>
 	);
