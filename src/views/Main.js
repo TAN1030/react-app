@@ -14,11 +14,13 @@ const Main = () => {
 
 			<h4><Link to="/detail?id=10&mode=U&sort=DESC">2. searchParams TEST</Link></h4>
 			
-			<h4><Link to="/list">3. List TEST</Link></h4>
+			<h4><Link to="/list?limit=5">3. List TEST</Link></h4>
+			
 
 
 
 		</>
 	);
+ 
 };
 export default Main;
