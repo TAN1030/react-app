@@ -7,9 +7,9 @@ import Product from './views/Product';
 import Detail from './views/Detail';
 import NotFound from './views/NotFound';
 
-import PostList from './views/ListCase/Post';
+import PostOldList from './views/ListCase/PostOld';
 import UserList from './views/ListCase/Users';
-
+import PostList from './views/ListCase/Posts';
 import SelectBoxTest from './views/SelectBoxTest';
 
 //import JsonReadWrite from './views/JsonReadWrite';
@@ -23,8 +23,9 @@ const App = () => {
         <Routes>
         <Route path="/" element={<Main />}></Route>
           <Route path="/product/:productId" element={<Product />}></Route> 
-          <Route path="/postList" element={<PostList />}></Route>  
+          <Route path="/postOld" element={<PostOldList />}></Route>  
           <Route path="/users" element={<UserList />}></Route>  
+          <Route path="/posts" element={<PostList />}></Route>  
           <Route path="/selectBoxTest" element={<SelectBoxTest />}></Route>  
           <Route path="/detail" element={<Detail />}></Route>  
 

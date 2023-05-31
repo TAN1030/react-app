@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
  
-const Post = () => { 
+const PostOld = () => { 
     const _LIMIT = 10;   /* 초기 limit 수를 설정  */ 
     const _TOTAL = 100;  /* 전체 페이지 건 수를 받아올수없어 임의설정 */ 
 
@@ -73,4 +73,4 @@ const Post = () => {
         </section>
     );
 };
-export default Post;
+export default PostOld;

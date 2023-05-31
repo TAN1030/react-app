@@ -19,8 +19,9 @@ const Main = () => {
 					<td><h4><Link to="/list">3. List TEST</Link></h4>
 						<ul>
 							<Link to="/selectBoxTest"><li>Select-Box TEST</li></Link>
-							<Link to="/postList"><li>Post List</li></Link>
-							<Link to="/users"><li>User List</li></Link>
+							<Link to="/postOld"><li>Post List</li></Link>
+							<Link to="/users"><li>User List(axios, Custom components)</li></Link>
+							<Link to="/posts"><li>Post List</li></Link>
 						</ul></td>
 				</tr>
 			</table>
