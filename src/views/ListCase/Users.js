@@ -3,7 +3,6 @@ import axios from 'axios';
 import UserList from '../components/UserList';
  
 const Users = () => { 
-
     //useState를 사용해 데이터 저장/출력
     const [users, setUsers] = useState([]);
 

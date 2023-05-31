@@ -6,8 +6,10 @@ import Footer from './views/Footer';
 import Product from './views/Product';
 import Detail from './views/Detail';
 import NotFound from './views/NotFound';
-import PostList from './views/ListCase/PostList';
+
+import PostList from './views/ListCase/Post';
 import UserList from './views/ListCase/Users';
+
 import SelectBoxTest from './views/SelectBoxTest';
 
 //import JsonReadWrite from './views/JsonReadWrite';

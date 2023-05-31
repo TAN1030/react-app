@@ -14,6 +14,18 @@ body {
   color: #f74232;
 }
 
+td {
+ 
+  vertical-align: top;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  text-align: center;
+  font-size: calc(6px + 2vmin);
+}
+
 code {
   font-family: Consolas, '나눔스퀘어 네오 OTF Bold';
 }
