@@ -17,7 +17,7 @@ const Main = () => {
 			<h4><Link to="/list">3. List TEST</Link></h4>
 			<ul>
 				<Link to="/selectBoxTest"><li>Select-Box TEST</li></Link>
-                <Link to="/list?limit=5"><li>List TEST</li></Link>
+                <Link to="/list"><li>List TEST</li></Link>
                       
             </ul>
 
