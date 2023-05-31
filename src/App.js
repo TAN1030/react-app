@@ -6,7 +6,8 @@ import Footer from './views/Footer';
 import Product from './views/Product';
 import Detail from './views/Detail';
 import NotFound from './views/NotFound';
-import List from './views/List';
+import PostList from './views/ListCase/PostList';
+import UserList from './views/ListCase/Users';
 import SelectBoxTest from './views/SelectBoxTest';
 
 //import JsonReadWrite from './views/JsonReadWrite';
@@ -20,7 +21,8 @@ const App = () => {
         <Routes>
         <Route path="/" element={<Main />}></Route>
           <Route path="/product/:productId" element={<Product />}></Route> 
-          <Route path="/list" element={<List />}></Route>  
+          <Route path="/postList" element={<PostList />}></Route>  
+          <Route path="/users" element={<UserList />}></Route>  
           <Route path="/selectBoxTest" element={<SelectBoxTest />}></Route>  
           <Route path="/detail" element={<Detail />}></Route>  
 

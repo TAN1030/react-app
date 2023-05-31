@@ -4,7 +4,7 @@ import Select from "react-select";
 const SelectBoxTest = () => { 
     /* 이 부분은 추가 확인 필요 */
    
-    //셀렉트 박스 테스트 2
+    // 배열출력형
     const limitSelectList = ["5", "10", "15", "20"]; 
     const [posts, setPosts] = useState([]);
     const [Selected, setSelected] = useState("10");   
@@ -12,7 +12,7 @@ const SelectBoxTest = () => {
         setSelected(e.target.value); //select:onChange의 선택된 option의 value 값을 e.target.value 로 받은 후 setSelected 
     }
 
-    // 셀렉트 박스 테스트 3 : 커스텀 컴포넌트 정의
+    // 커스텀 컴포넌트
     const limitSelectOpions = [
         { value: "apple", name: "사과" },
         { value: "banana", name: "바나나" },
@@ -37,7 +37,7 @@ const SelectBoxTest = () => {
             </select>
         );
     };
-    // 셀렉트박스 테스트 4
+    // react-select A
     const online = [
          { value: "5", label: "5개" },
          { value: "10", label: "10개" },
@@ -46,7 +46,7 @@ const SelectBoxTest = () => {
         ]   
     const [selectOnline, setSelectOnline] = useState(online[0]); //안에 들어가는 값을 받아야해서 state사용
         
-    // 셀렉트박스 테스트 5
+    // react-select B 
     let options = [
         { value: "바나나", label: "바나나" },
         { value: "사과", label: "사과" },
@@ -65,14 +65,14 @@ const SelectBoxTest = () => {
     return (
         <section>
            
-            셀렉트 박스 테스트 1 : 
+            일반 HTML 선언 : 
             <select defaultValue={'15'}>
                 <option value='5'>5</option>
                 <option value='10'>10</option>
                 <option value='15'>15</option>
                 <option value='20'>20</option>                
             </select> <hr/>         
-            셀렉트 박스 테스트 2 : 
+            배열 출력 : 
             <select onChange={handledSelect} value={Selected}>
                 {limitSelectList.map((item) => (
                     <option value={item} key={item}>
@@ -81,15 +81,15 @@ const SelectBoxTest = () => {
                 ))}
             </select> Selected: <b>{Selected} </b>  
             <hr/>
-            셀렉트 박스 테스트 3 :         
+            커스텀 컴포넌트 :         
             <SelectBox options={limitSelectOpions} defaultValue="banana"></SelectBox> 
             <hr/>
-            셀렉트 박스 테스트 4 : 
+            react-select A :  
             <Select options={online}  
                     onChange={setSelectOnline}  
                     defaultValue={online[0]} />  
             <hr/>
-            셀렉트 박스 테스트 5 : 
+            react-select B : 
             <Select
                 ref={selectInputRef}
                 onChange={(e) => {

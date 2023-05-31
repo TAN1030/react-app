@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
  
-const List = () => { 
+const PostList = () => { 
     const _LIMIT = 10;   /* 초기 limit 수를 설정  */ 
     const _TOTAL = 100;  /* 전체 페이지 건 수를 받아올수없어 임의설정 */ 
 
@@ -9,7 +9,7 @@ const List = () => {
     const offset = searchParams.get('offset') === null? 0 : searchParams.get('offset');
     const limit  = searchParams.get('limit') === null? _LIMIT : searchParams.get('limit');
 
-    // BACK 
+    // BACK  
     useEffect(() => { 
         fetch(  `https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_start=${offset}`)
          .then((response) => response.json())
@@ -17,6 +17,7 @@ const List = () => {
          ;
     }, [offset, limit]);   // post 에는 offset,limt 로 잘린 건수만큼 존재 
     const [posts, setPosts] = useState([]); 
+ 
 
     //셀렉트 박스  
     const limitSelectList = ["5", "10", "15", "20"];
@@ -45,7 +46,9 @@ const List = () => {
         }
         return arr;
     }
+    // 검색
     
+
     return (
         <section>
             <h4><Link to="https://jsonplaceholder.typicode.com/" target='_blank'>🐠POST LIST (JsonPlaceHolder)🐠</Link> </h4>  
@@ -70,4 +73,4 @@ const List = () => {
         </section>
     );
 };
-export default List;
+export default PostList;

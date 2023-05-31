@@ -5,7 +5,7 @@ function Header(props) {
     return (
 		<>
             <Link to="/">
-			<h1>헤더영역</h1>
+			<h2>🌼TEST PAGE🌼</h2>
             </Link>
 		</>
     );

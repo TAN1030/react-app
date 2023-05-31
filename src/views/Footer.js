@@ -13,7 +13,7 @@ const Footer = () => {
       }; 
     return (
         <>
-        <h5>이곳은 페이지의 하단이다. (useNavigate TEST)</h5>
+        <h5>💝</h5>
         <div>
             <button onClick={() => { navigate('/');  }}>HOME으로 가기</button> 
             <span onClick={() => navigate(-1)}>🔙뒤로가기</span> <br/> 
