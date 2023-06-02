@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useSearchParams } from 'react-router-dom'
 import PostList from '../components/PostList'
+import Pager from '../components/Pager'
 import Paging from '../components/Paging'
 
 
@@ -22,12 +23,11 @@ const Posts = () => {
                 setPosts(response.data); });  
     }, []);
 
-
-    // 자식 컴포넌트인 UserList에 users데이터를 props형태로 전달
     return (
         < >
         <h5>~ post list ~</h5>
         <PostList itemsPerPage={10} posts={posts}/>
+        <Pager> </Pager>
         </>
     );
 };
