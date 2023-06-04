@@ -24,6 +24,16 @@ const Main = () => {
 							<Link to="/posts"><li>Post List</li></Link>
 						</ul></td>
 				</tr>
+				<tr>
+					<td>
+						<h4>4. inflearn samp</h4>
+						<ul>
+							<Link to="/samp01"><li>구구단/</li></Link> 
+						</ul>
+					</td>
+					<td></td>
+					<td></td>					
+				</tr>
 			</table>
 		</>
 	);
