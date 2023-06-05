@@ -7,14 +7,13 @@ const Samp01 = () => {
     const [second, setSecond] = React.useState(Math.ceil(Math.random() *9));
     const [value, setValue] = React.useState('');
     const [result, setResult] = React.useState('');
-    const inputEl = React.useRef(null);
+    const inputEl = React.useRef(null);     // 특정 DOM을 선택 (getElementById, querySelector)
 
     const onSubmitForm = (e) => {
         e.preventDefault(); // 어떤 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트에 대한 사용자 에이전트의 기본 동작을 실행하지 않도록 지정
-        setResult("입력!");
 
         if(parseInt(value) === first * second) {
-            setResult('정답');
+            setResult('정답! ('+first+'*'+second+' = '+parseInt(value)+')');
             
             // 재계산
             setFirst(Math.ceil(Math.random()*9));
