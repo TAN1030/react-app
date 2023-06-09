@@ -28,7 +28,8 @@ const Main = () => {
 					<td>
 						<h4>4. inflearn samp</h4>
 						<ul>
-							<Link to="/samp01"><li>구구단/</li></Link> 
+							<Link to="/Samp01"><li>1) 구구단</li></Link> 
+							<Link to="/Samp02"><li>2) 끝말잇기</li></Link> 
 						</ul>
 					</td>
 					<td></td>

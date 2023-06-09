@@ -1,13 +1,14 @@
 
 import React, { useState } from "react";
 
-const Samp01 = () => {
+/* 1) 구구단 (함수형) */
+const Samp01_gugudan = () => {
     
     const [first, setFirst] = React.useState(Math.ceil(Math.random() *9));
     const [second, setSecond] = React.useState(Math.ceil(Math.random() *9));
     const [value, setValue] = React.useState('');
     const [result, setResult] = React.useState('');
-    const inputEl = React.useRef(null);     // 특정 DOM을 선택 (getElementById, querySelector)
+    const inputEl = React.useRef(null);     // 함수형에서 특정 DOM을 선택 (getElementById, querySelector)
 
     const onSubmitForm = (e) => {
         e.preventDefault(); // 어떤 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트에 대한 사용자 에이전트의 기본 동작을 실행하지 않도록 지정
@@ -19,7 +20,7 @@ const Samp01 = () => {
             setFirst(Math.ceil(Math.random()*9));
             setSecond(Math.ceil(Math.random() *9));
             setValue('');
-            inputEl.current.focus();
+            inputEl.current.focus(); // 함수형에서 DOM 접근시 ref 사용 > current 필요
         }else{
             setResult('땡');
             setValue('');
@@ -45,4 +46,4 @@ const Samp01 = () => {
         </React.Fragment>
     )
 }
-export default Samp01;
+export default Samp01_gugudan;
